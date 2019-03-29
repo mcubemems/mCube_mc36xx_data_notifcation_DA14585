@@ -8,7 +8,7 @@ This SDK6 DA14585 example shows how to communicate with an I2C accelerometer sen
 
 EVA3635/EVA3672 is necessary to run this example. Defining M_DRV_MC36XX_CFG_BUS_I2C in m_drv_mc36xx.c to set sensor running in I2C mode. The application will read sensor data and transmit over BLE in this case.
 
-This example also includes DEMO of sniff and FIFO modes which are special features of mc36xx series. Define SNIFF_DEMO or FIFO_DEMO in user_accelerometer.h. When enable SNIFF_DEMO, sensor will set to sniff mode after 32 samples. It can be waked up once user shake it. 32 samples will be read out and go back to sniff mode again. When enable FIFO_DEMO, sensor will load all the data from FIFO and send the 1st raw data over BLE.
+This example also includes DEMO of sniff and FIFO modes which are special features of mc36xx series. Define SNIFF_DEMO or FIFO_DEMO in user_accelerometer.h. When enable SNIFF_DEMO, sensor will set to sniff mode after 32 samples. It can be waked up once user shake it. 32 samples will be read out and go back to sniff mode again. When enable FIFO_DEMO, sensor will load all the data from FIFO based on the treshold setting and send the 1st raw data over BLE.
 
 HW and SW configuration
 Hardware configuration
